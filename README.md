@@ -20,13 +20,13 @@ Jointly predicts **facial expression class** and **continuous valence/arousal** 
 
 Trained on [AffectNet](http://mohammadmahoor.com/affectnet/) (3,999 images, 8 expression classes):
 
-| Metric | Train | Val |
-|:---|:---:|:---:|
-| Accuracy | 84.2% | **77.9%** |
-| Weighted F1 | 0.842 | **0.779** |
-| Cohen's Kappa | 0.820 | 0.749 |
-| CCC (Valence/Arousal) | 0.801 | **0.764** |
-| RMSE (Valence/Arousal) | 0.182 | 0.213 |
+| Metric | Train | Val | Test |
+|:---|:---:|:---:|:---:|
+| Accuracy | 96.4% | 69.2% | **71.1%** |
+| Weighted F1 | 0.964 | 0.692 | **0.711** |
+| Cohen's Kappa | 0.959 | 0.648 | 0.670 |
+| CCC (Valence/Arousal) | 0.846 | 0.730 | **0.715** |
+| RMSE (Valence/Arousal) | 0.265 | 0.312 | 0.319 |
 
 ---
 
