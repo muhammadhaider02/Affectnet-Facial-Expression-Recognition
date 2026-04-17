@@ -1,0 +1,36 @@
+[project]
+name = "Affectnet-Facial-Expression-Recognition"
+version = "0.1.0"
+description = "Facial Expression Recognition on AffectNet using VGGFace2Net"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "scikit-learn>=1.4.0",
+    "scipy>=1.13.0",
+    "krippendorff>=0.6.0",
+    "matplotlib>=3.9.0",
+    "pillow>=10.0.0",
+    "numpy>=1.26.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fer"]
+
+[project.scripts]
+fer-train    = "fer.cli:train_main"
+fer-evaluate = "fer.cli:evaluate_main"
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch      = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }
