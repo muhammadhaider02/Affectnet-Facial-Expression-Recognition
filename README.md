@@ -30,9 +30,27 @@ Trained on [AffectNet](http://mohammadmahoor.com/affectnet/) (3,999 images, 8 ex
 
 ---
 
+## Hardware
+
+Trained on AWS EC2:
+
+| | |
+|:---|:---|
+| Instance | g4dn.xlarge |
+| GPU | NVIDIA T4 (16 GB VRAM) |
+| vCPUs | 4 |
+| RAM | 16 GB |
+| Storage | 100 GB gp3 EBS |
+| AMI | Deep Learning OSS Nvidia Driver AMI GPU PyTorch (Ubuntu 22.04) |
+| CUDA | 12.4 |
+| Python | 3.12 |
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
+- [Hardware](#hardware)
 - [Architecture](#architecture)
 - [Setup](#setup)
 - [Dataset](#dataset)
