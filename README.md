@@ -18,7 +18,7 @@ Jointly predicts **facial expression class** and **continuous valence/arousal** 
 
 ## Results
 
-Trained on [AffectNet](http://mohammadmahoor.com/affectnet/) (3,999 images, 8 expression classes):
+Trained on [AffectNet](http://mohammadmahoor.com/affectnet/)
 
 | Metric | Train | Val | Test |
 |:---|:---:|:---:|:---:|
@@ -127,11 +127,11 @@ data/
 
 Data split (stratified, fixed by `--seed`):
 
-| Split | Size | Approx. samples |
-|:---|:---:|:---:|
-| Train | 70% | 8,397 |
-| Validation | 15% | 1,800 |
-| Test | 15% | 1,800 |
+| Split | Size |
+|:---|:---:|
+| Train | 70% |
+| Validation | 15% |
+| Test | 15% |
 
 *After 3x augmentation expansion. Augmentations: horizontal flip, rotation, color jitter, Gaussian blur, random crop.*
 
