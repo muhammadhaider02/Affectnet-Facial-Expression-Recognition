@@ -18,7 +18,7 @@ Jointly predicts **facial expression class** and **continuous valence/arousal** 
 
 ## Results
 
-Trained on [AffectNet](http://mohammadmahoor.com/affectnet/)
+Trained on [AffectNet](https://mohammadmahoor.com/pages/databases/affectnetplus/) (8 expression classes):
 
 | Metric | Train | Val | Test |
 |:---|:---:|:---:|:---:|
