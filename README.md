@@ -1,6 +1,6 @@
 <div align="center">
 
-# FER-AffectNet
+# Affectnet Facial Expression Recognition
 
 **Multi-task Facial Expression Recognition using VGGFace2Net**
 
@@ -8,11 +8,25 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.6%2B-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org)
 [![CUDA](https://img.shields.io/badge/CUDA-12.4-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
 [![uv](https://img.shields.io/badge/uv-package%20manager-DE5FE9)](https://docs.astral.sh/uv/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 Jointly predicts **facial expression class** and **continuous valence/arousal** from a single image using a pretrained VGG-16 backbone with dual task-specific heads.
 
 </div>
+
+---
+
+## Table of Contents
+
+- [Results](#results)
+- [Hardware](#hardware)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Setup](#setup)
+- [Dataset](#dataset)
+- [Usage](#usage)
+- [Outputs](#outputs)
+- [Metrics](#metrics)
+- [Project Structure](#project-structure)
 
 ---
 
@@ -44,20 +58,6 @@ Trained on AWS EC2:
 | AMI | Deep Learning OSS Nvidia Driver AMI GPU PyTorch (Ubuntu 22.04) |
 | CUDA | 12.4 |
 | Python | 3.12 |
-
----
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Hardware](#hardware)
-- [Architecture](#architecture)
-- [Setup](#setup)
-- [Dataset](#dataset)
-- [Usage](#usage)
-- [Outputs](#outputs)
-- [Metrics](#metrics)
-- [Project Structure](#project-structure)
 
 ---
 
@@ -101,7 +101,7 @@ Input (224x224x3)
 
 ```bash
 git clone https://github.com/muhammadhaider02/Affectnet-Facial-Expression-Recognition.git
-cd FER-Affectnet
+cd Affectnet-Facial-Expression-Recognition
 uv sync
 ```
 
@@ -220,7 +220,7 @@ All files are saved to `outputs/`:
 ## Project Structure
 
 ```
-FER-Affectnet/
+Affectnet-Facial-Expression-Recognition/
 ├── src/fer/
 │   ├── cli.py          <- train and evaluate entry points
 │   ├── dataset.py      <- AffectNet dataset + transforms
@@ -237,9 +237,3 @@ FER-Affectnet/
 ├── run.sh
 └── pyproject.toml
 ```
-
----
-
-## License
-
-For educational and research use.
